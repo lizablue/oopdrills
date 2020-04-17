@@ -7,43 +7,14 @@ Person.prototype.sayHello = function() {
     alert(`Hey! My name is ${this.name}. I am ${this.age} years old and live in ${this.city}.`);
 }
 
-let person1 = {
-    name: 'Simba',
-    sayHello: function() {
-        console.log(`Hello! My name is ${person1.name}.`);
-    }
-};
+let p1 = new Person('Ana', 'Arkansas', 29);
+let p2 = new Person('Liz', 'Missouri', 30);
+let p3 = new Person('Lauren', 'Iowa', 27);
+let p4 = new Person('Faith', 'Tennessee', 29);
+let p5 = new Person('Kimberlee', 'Missouri', 30);
 
-let person2 = {
-    name: 'Nala',
-    sayHello: function() {
-        console.log(`Hello! My name is ${person2.name}.`);
-    }
-};
-
-let person3 = {
-    name: 'Rafiki',
-    sayHello: function() {
-        console.log(`Hello! My name is ${person3.name}`);
-    }
-};
-
-let person4 = {
-    name: 'Timon',
-    sayHello: function() {
-        console.log(`Hello! My name is ${person4.name}.`);
-    }
-};
-
-let person5 = {
-    name: 'Pumba',
-    sayHello: function() {
-        console.log(`Hello! My name is ${person5.name}`);
-    }
-};
-
-person1.sayHello();
-person2.sayHello();
-person3.sayHello();
-person4.sayHello();
-person5.sayHello();
+p1.sayHello();
+p2.sayHello();
+p3.sayHello();
+p4.sayHello();
+p5.sayHello();
