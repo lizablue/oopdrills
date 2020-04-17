@@ -32,3 +32,9 @@ let person5 = {
         console.log(`Hello! My name is ${person5.name}`);
     }
 };
+
+person1.sayHello();
+person2.sayHello();
+person3.sayHello();
+person4.sayHello();
+person5.sayHello();
