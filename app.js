@@ -1,10 +1,12 @@
-function Person(name, city, age) {
-    this.name = name;
-    this.city = city;
-    this.age = age;
-}
-Person.prototype.sayHello = function() {
-    alert(`Hey! My name is ${this.name}. I am ${this.age} years old and live in ${this.city}.`);
+class Person {
+    constructor(name, state, age) {
+        this.name = name;
+        this.state = state;
+        this.age = age;
+    }
+    sayHello() {
+        alert(`Hello my name is ${this.name}. I am ${this.age} years old and live in ${this.state}.`);
+    }
 }
 
 let p1 = new Person('Ana', 'Arkansas', 29);
