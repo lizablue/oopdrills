@@ -1,3 +1,12 @@
+function Person(name, city, age) {
+    this.name = name;
+    this.city = city;
+    this.age = age;
+}
+Person.prototype.sayHello = function() {
+    alert(`Hey! My name is ${this.name}. I am ${this.age} years old and live in ${this.city}.`);
+}
+
 let person1 = {
     name: 'Simba',
     sayHello: function() {
